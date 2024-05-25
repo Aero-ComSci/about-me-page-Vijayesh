@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        p{
+            color: rgb(5, 5, 99);
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Resume/CV</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+    <h1 style="color: Black;">My Projects</h1>
+    <style>
+        p{
+            color: white;
+            font-size: large;
+        }
+        table, th, td{
+            border: 3px solid rgb(1, 7, 8);
+            color: rgb(27, 28, 29);
+            font-weight: normal;
+            margin: auto;
+        }
+        .github-link {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: bold; 
+            padding: 5px;
+            border: 2px solid #0366d6; 
+            border-radius: 5px; 
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block; 
+        }
+    </style>
+    <table width="80%" margin-left="25px">
+        <tr>
+            <th>Github Link to Code</th>
+            <th>Description of Code</th>
+            <th>Additional Information</th>
+        </tr>
+        <tr>
+            <th><a href="https://github.com/Vijayesh314/VijayeshPrograms/blob/main/9_lives.py" class="github-link">9 lives</a></th>
+            <th>This is a basic hangman game without the hangman gui. The player is given 5 blank spaces
+                and they can either guess a letter or guess the word entirely. If the player gets it right, the
+                clue updates itself to add the letter, but the user loses a life if they get it incorrectly. The 
+                game ends when the player guesses the word correctly, or when they use all 9 of their lives.
+            </th>
+            <th>This game would work much better with an actual hangman gui, but that's hard to code in python so
+                I scrapped that. Another feature I could've added was a list of guessed letters.
+            </th>
+        </tr>
+        <br>
+        <tr>
+            <th><a href="https://github.com/Vijayesh314/VijayeshPrograms/blob/main/Clock.py" class="github-link">Clock</a></th>
+            <th>This is a simple python code that tells the time using turtle as the GUI and datetime to get the
+                actual time.
+            </th>
+            <th>Not much to say about this code. I guess I could've made it better by adding the high school bell schedule
+                to it (wonder where I got that idea from).
+            </th>
+        </tr>
+        <br>
+        <tr>
+            <th><a href="https://github.com/Vijayesh314/VijayeshPrograms/blob/main/Food_Order.py" class="github-link">Fast Food Order</a></th>
+            <th>This is an application that allows the user to order items at a fast food place. They have the option 
+                of choosing their burger, the size and type of drinks if they want it, the size of french fries if they
+                want it, and how many ketchup packets. At the end, the application prints out the total cost of the order.
+            </th>
+            <th>This application is not case sensitive, so this means that capitalization doesn't matter due to the code 
+                changing every input to lowercase. The user can also change their order at the end of the application if 
+                they want to, but they have to start all the way from the beginning.
+            </th>
+        </tr>
+        <br>
+        <tr>
+            <th><a href="https://github.com/Vijayesh314/VijayeshPrograms/blob/main/coincollector.py" class="github-link">Coin Collector</a></th>
+            <th>This is a basic game that allows the user to move a character on the screen using the arrow keys in order 
+                to catch a coin. After the coin is collected, the coin moves to a random place on the screen, and this 
+                continues for 1 minute. After that, the final score is provided.
+            </th>
+            <th>The only major thing to note about this game is that it incorporates pgzrun for the gui, whic is an extension
+                of pygame. This means that the user should have downloaded the pip file in order to use pgzrun.
+            </th>
+        </tr>
+        <br>
+        <tr>
+            <th><a href="https://github.com/Vijayesh314/VijayeshPrograms/blob/main/shootthefruit.py" class="github-link">Shoot the Fruit</a></th>
+            <th>This is a basic game that allows the user to click on the apple using the cursor. After that, the apple moves to 
+                a random place on the screen. If the user misses the apple, the game asks the user if they want to play again.
+            </th>
+            <th>The only major thing to note about this game is that it incorporates pgzrun for the gui, whic is an extension
+                of pygame. This means that the user should have downloaded the pip file in order to use pgzrun.
+            </th>
+        </tr>
+        <br>
+        <tr>
+            <th><a href="https://github.com/Vijayesh314/VijayeshPrograms/blob/main/Egg_Catcher.py" class="github-link">Egg Catcher</a></th>
+            <th>This is a game that allows the user to use the catcher to catch eggs falling from the screen using the arrow keys
+                left and right. As the game progresses, the more and more eggs appear quickly on the screen. This means that the 
+                difficulty has increased. The game ends when the user drops three of the eggs.
+            </th>
+            <th>Also nothing much to say here. The eggs have different colors I guess.</th>
+        </tr>
+        <br>
+        <tr>
+            <th><a href="https://github.com/Vijayesh314/VijayeshPrograms/blob/main/betaPokemon.py" class="github-link">Pokemon Game</a></th>
+            <th>This is basically just a copycat Pokemon game made in python. The user picks a pokemon from a list of three, then they
+                battle the computer's chosen pokemon. The user and computer each get to choose from four moves to use, and the game ends 
+                when one pokemon's hp becomes zero. Each pokemon has its own unique attack, defense, and hp statistic.
+            </th>
+            <th>Ok, so there are a lot things that can be improved in this code (that my friends and I are working on for fun). We need to 
+                make a better damage equation that actually incorporates both the attack and defense, not just attack, let the moves have
+                their own type and damage output instead of using the pokemon's type for the move, and add an actual gui to this game. One good
+                feature I have is the delay print, which makes everything print slowly just like the original Pokemon games.
+            </th>
+        </tr>
+    </table>
